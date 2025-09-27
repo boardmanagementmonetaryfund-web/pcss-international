@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Clearing Settlement System International</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #004aad;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+        }
+        header img.logo {
+            max-width: 150px;
+            margin-bottom: 10px;
+        }
+        nav {
+            background: #333;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: #ffd700;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .section {
+            margin-bottom: 40px;
+        }
+        .section h2 {
+            color: #004aad;
+            border-bottom: 2px solid #004aad;
+            padding-bottom: 10px;
+        }
+        .client-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        .client-table th, .client-table td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+        .client-table th {
+            background: #004aad;
+            color: white;
+        }
+        .client-table tr:nth-child(even) {
+            background: #f9f9f9;
+        }
+        .chat-box {
+            border: 1px solid #ddd;
+            padding: 15px;
+            border-radius: 5px;
+            background: #f9f9f9;
+            height: 200px;
+            overflow-y: scroll;
+            margin-bottom: 10px;
+        }
+        .chat-input {
+            width: 80%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .chat-button {
+            padding: 10px 20px;
+            background: #004aad;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .chat-button:hover {
+            background: #003580;
+        }
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .feature {
+            flex: 1 1 45%;
+            padding: 15px;
+            background: #e6f0ff;
+            border-radius: 5px;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+        }
+        .contact a {
+            color: #004aad;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .contact a:hover {
+            color: #ffd700;
+        }
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        @media (max-width: 768px) {
+            .features, .gallery {
+                flex-direction: column;
+                grid-template-columns: 1fr;
+            }
+            .feature {
+                flex: 1 1 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="PCSSI Logo" class="logo">
+        <h1>Payment Clearing Settlement System International</h1>
+        <p>Promoting Global Economic Stability and Security</p>
+    </header>
+
+    <nav>
+        <a href="#about">About Us</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#clients">Clients</a>
+        <a href="#features">Key Features</a>
+        <a href="#chat">Chat</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="container">
+        <div class="section" id="about">
+            <h2>About Us</h2>
+            <p>The International Monetary Fund is an intergovernmental financial institution that promotes global economic growth, high employment, and international monetary cooperation, secures global financial stability, facilitates international trade, and reduces global poverty.</p>
+            <p>We help clients recover their funds worldwide, we track fraud and scams, and we are committed to keeping the global economy safe.</p>
+            <p><strong>CEO:</strong> Adam Sutherland and his wife</p>
+            <p><strong>Managing Director:</strong> Gareth John Evans</p>
+        </div>
+
+        <div class="section" id="gallery">
+            <h2>Our Work</h2>
+            <div class="gallery">
+                <img src="image1.jpg" alt="Money Transfer 1">
+                <img src="image2.jpg" alt="Money Transfer 2">
+                <img src="image3.jpg" alt="High Building 1">
+                <img src="image4.jpg" alt="High Building 2">
+                <img src="image5.jpg" alt="Finance 1">
+                <img src="image6.jpg" alt="Finance 2">
+            </div>
+        </div>
+
+        <div class="section" id="clients">
+            <h2>Top Clients</h2>
+            <table class="client-table">
+                <tr>
+                    <th>Name</th>
+                    <th>Amount to Transfer</th>
+                    <th>Bank</th>
+                    <th>Outstanding Fee</th>
+                    <th>Status</th>
+                </tr>
+                <tr>
+                    <td>Jeph Mack</td>
+                    <td>$3.7M USD</td>
+                    <td>Wells Fargo Bank</td>
+                    <td>$17,000 USD</td>
+                    <td>Pending</td>
+                </tr>
+                <tr>
+                    <td>Gavan Muckian</td>
+                    <td>$1.6M AUD</td>
+                    <td>CommBank</td>
+                    <td>$2,200 AUD</td>
+                    <td>Pending</td>
+                </tr>
+                <tr>
+                    <td>William C</td>
+                    <td>$1.1M USD</td>
+                    <td>Citibank</td>
+                    <td>$1,000 USD</td>
+                    <td>Pending</td>
+                </tr>
+                <tr>
+                    <td>Stephen Ronald</td>
+                    <td>$900,000 CAD</td>
+                    <td>EQ Bank</td>
+                    <td>$520 CAD</td>
+                    <td>Pending</td>
+                </tr>
+                <tr>
+                    <td>Larry Scott</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>On Hold</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="section" id="features">
+            <h2>Key Features</h2>
+            <div class="features">
+                <div class="feature">
+                    <h3>Low Risk</h3>
+                    <p>MMFs invest in secure, short-term assets, reducing exposure to market volatility.</p>
+                </div>
+                <div class="feature">
+                    <h3>High Liquidity</h3>
+                    <p>Investors can typically access their money easily, within a few days.</p>
+                </div>
+                <div class="feature">
+                    <h3>Professional Management</h3>
+                    <p>Funds are managed by financial experts who seek to optimize returns while minimizing risks.</p>
+                </div>
+                <div class="feature">
+                    <h3>Targeted Value</h3>
+                    <p>MMFs generally aim to maintain a stable $1 Net Asset Value (NAV) per share, with income distributed as dividends.</p>
+                </div>
+                <div class="feature">
+                    <h3>Accessibility</h3>
+                    <p>Retail MMFs have low minimum investment requirements, making them accessible to individuals.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section" id="chat">
+            <h2>Client Chat</h2>
+            <div class="chat-box" id="chatBox">
+                <p>Welcome to our client chat! Send a message to connect with our team.</p>
+            </div>
+            <input type="text" class="chat-input" id="chatInput" placeholder="Type your message...">
+            <a href="send.html">Send</a>
+        </div>
+
+        <div class="section" id="contact">
+            <h2>Contact Us</h2>
+            <p><strong>Email:</strong> <a href="mailto:boardmanagement.monetaryfund@gmail.com">boardmanagement.monetaryfund@gmail.com</a></p>
+            <p><strong>Customer Care:</strong> Contact Luiz via <a href="https://signal.me/#eu/uEWG4dFEw0elndlT7Oxp_s6zmTFrhBWdnHrvGIxIcfXgaOdBwt5EfYYkZYumoL1X" target="_blank">Signal</a></p>
+            <p>Don't have Signal? <a href="https://signal.org/download/" target="_blank">Get it here</a>.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Payment Clearing Settlement System International. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function sendMessage() {
+            const chatInput = document.getElementById('chatInput');
+            const chatBox = document.getElementById('chatBox');
+            const message = chatInput.value.trim();
+            if (message) {
+                // Display the message in the chat box
+                const messageElement = document.createElement('p');
+                messageElement.textContent = Client: ${message};
+                chatBox.appendChild(messageElement);
+                chatBox.scrollTop = chatBox.scrollHeight;
+
+                // Send the message via email (opens mail client)
+                const subject = encodeURIComponent('Client Chat Message');
+                const body = encodeURIComponent(message);
+                const mailtoLink = mailto:garethjohnevansac@gmail.com?subject=${subject}&body=${body};
+                window.location.href = mailtoLink;
+
+                // Clear the input
+                chatInput.value = '';
+
+                // Simulate a response (placeholder for user experience)
+                setTimeout(() => {
+                    const response = document.createElement('p');
+                    response.textContent = 'Support: Thank you for your message! Our team will respond soon.';
+                    chatBox.appendChild(response);
+                    chatBox.scrollTop = chatBox.scrollHeight;
+                }, 1000);
+            }
+        }
+    </script>
+</body>
+</html>
